@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0967ec97-e0cb-4b91-9b42-e0ff76a8c5ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Create_DB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Databases.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clippr.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Welcome_screen_version2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/draw_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/write_to_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Databases.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Databases.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Learning_Poisson.py" beforeDir="false" afterPath="$PROJECT_DIR$/Learning_Poisson.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Welcome_Screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Welcome_Screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +64,7 @@
       <recent name="$PROJECT_DIR$/../../Project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Create_DB">
+  <component name="RunManager">
     <configuration name="Create_DB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,6 +153,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Welcome_screen_version2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Welcome_screen_version2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,10 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Welcome_screen_version2" />
+        <item itemvalue="Python.Welcome_Screen" />
         <item itemvalue="Python.Create_DB" />
         <item itemvalue="Python.connection" />
         <item itemvalue="Python.Selecting_countries_page" />
-        <item itemvalue="Python.Welcome_Screen" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +228,11 @@
       <workItem from="1690380456672" duration="820000" />
       <workItem from="1690556946924" duration="1603000" />
       <workItem from="1690899725338" duration="3226000" />
-      <workItem from="1692365789825" duration="3725000" />
+      <workItem from="1692365789825" duration="4252000" />
+      <workItem from="1692387312140" duration="4253000" />
+      <workItem from="1692609836060" duration="296000" />
+      <workItem from="1692698500186" duration="742000" />
+      <workItem from="1693733643473" duration="2593000" />
     </task>
     <task id="LOCAL-00001" summary="Base">
       <created>1686841109090</created>
@@ -238,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689953191423</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="database set up">
+      <created>1692369699171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692369699171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,15 +285,19 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base" />
+    <MESSAGE value="database set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="database set up" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project$Write_to_database.coverage" NAME="Write_to_database Coverage Results" MODIFIED="1690902556567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$Welcome_screen_version2.coverage" NAME="Welcome_screen_version2 Coverage Results" MODIFIED="1693845392880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$learning_poission.coverage" NAME="learning_poission Coverage Results" MODIFIED="1689953158918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$Welcome_Screen.coverage" NAME="Welcome_Screen Coverage Results" MODIFIED="1690558199326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$Welcome_Screen.coverage" NAME="Welcome_Screen Coverage Results" MODIFIED="1693845385699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$models.coverage" NAME="models Coverage Results" MODIFIED="1693846122978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$connection.coverage" NAME="connection Coverage Results" MODIFIED="1692367629504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$Learning_Poisson.coverage" NAME="Learning_Poisson Coverage Results" MODIFIED="1690558239610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$Learning_Poisson.coverage" NAME="Learning_Poisson Coverage Results" MODIFIED="1692440866709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$write_to_db.coverage" NAME="write_to_db Coverage Results" MODIFIED="1693846403030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project$Selecting_countries_page.coverage" NAME="Selecting_countries_page Coverage Results" MODIFIED="1690380646476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Project$Create_DB.coverage" NAME="Create_DB Coverage Results" MODIFIED="1692369499875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Project$Create_DB.coverage" NAME="Create_DB Coverage Results" MODIFIED="1693845913050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

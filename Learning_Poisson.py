@@ -1,10 +1,10 @@
 from numpy import random
 
 base = 0.0128125
-Germany_attack = 92
-Germany_defense = 85
-Sweden_attack = 84
-Sweden_defense = 81
+Germany_attack = 80
+Germany_defense = 80
+Sweden_attack = 78
+Sweden_defense = 75
 Gr_wins_num = 0
 Sw_wins_num= 0
 Gr_goal_count = 0
@@ -15,7 +15,7 @@ def Calculate_Goals(attack, defense):
     num_goals = random.poisson(changed_minute_base)
     return num_goals
 
-for x in range(200):
+for x in range(10):
     Gr_goals = 0
     Sw_goals = 0
     for i in range(90):
