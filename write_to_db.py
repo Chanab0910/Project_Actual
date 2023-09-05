@@ -5,7 +5,7 @@ from models import Country, Match
 
 
 # Connect to the activities database
-engine = create_engine('sqlite:///Databases.sqlite3', echo=True)
+engine = create_engine('sqlite:///World_cup.sqlite3', echo=True)
 
 # Create a session and add the people to the database
 with Session(engine) as sess:
