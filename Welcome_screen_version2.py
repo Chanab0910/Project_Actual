@@ -18,7 +18,7 @@ class TestGUI(tk.Tk):
         self.background = tk.Label(self, image=self.bg_image, highlightthickness=0, borderwidth=0)
         self.title = tk.Label(self, image=self.title_image, highlightthickness=0, borderwidth=0)
         self.start = tk.Button(self, image=self.start_image, highlightthickness=0, borderwidth=0)
-        self.quit = tk.Button(self, image=self.quit_image, highlightthickness=0, borderwidth=0)
+        self.quit = tk.Button(self, image=self.quit_image, highlightthickness=0, borderwidth=0, command=quit)
 
 
         self.Next_Page_Button = tk.Button(self, text='See Results',font = 'FuturaStd-Medium')
