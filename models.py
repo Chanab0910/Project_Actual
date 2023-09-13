@@ -12,6 +12,9 @@ class Country(Base):
     Defense = Column(Integer, unique=False, nullable=False)
     Tier = Column(Integer, unique=False, nullable=False)
 
+    def __repr__(self):
+        return f'Country({self.Country_name})'
+
 
 
 
@@ -24,3 +27,5 @@ class Match(Base):
     Away_goals = Column(Integer, unique=False, nullable=False)
     Winner = Column(String, unique=False, nullable=False)
 
+    def __repr__(self):
+        return f'Match({self.Home_team}) v Match({self.Away_team})'
