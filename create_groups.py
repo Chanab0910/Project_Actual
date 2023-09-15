@@ -10,6 +10,11 @@ group6 = []
 group7 = []
 group8 = []
 
+groups = []
+# create list of objects
+# don't have lots of variables with 1 parameter changed
+
+
 tier1 = sample(read_from_db.tier1_countries, len(read_from_db.tier1_countries))
 tier2 = sample(read_from_db.tier2_countries, len(read_from_db.tier2_countries))
 tier3 = sample(read_from_db.tier3_countries, len(read_from_db.tier3_countries))

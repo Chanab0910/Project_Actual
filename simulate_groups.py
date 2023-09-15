@@ -25,8 +25,22 @@ class simulate_group:
 
     def choose_which_group(self):
         self.current_group = self.groups[self.count]
+        print(self.current_group)
         return self.current_group
-        print('1')
+
+    def order_of_play(self):
+        self.match(self.current_group, 1)
+        self.match(self.current_group, 2)
+        self.match(self.current_group, 3)
+        self.match(self.current_group, 4)
+        self.match(self.current_group, 5)
+        self.match(self.current_group, 6)
+        self.match(self.current_group, 7)
+
+    def match(self, group, game):
+        with Session(self.engine) as self.sess:
+            self.Game = Match(Home_team= )
 
 
-print(simulate_group.choose_which_group())
+
+print(simulate_group.choose_which_group)
