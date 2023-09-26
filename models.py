@@ -16,8 +16,6 @@ class Country(Base):
         return f'Country({self.Country_name})'
 
 
-
-
 class Match(Base):
     __tablename__ = 'Match'
     Home_team = Column(String, primary_key=True, unique=False, nullable=False)

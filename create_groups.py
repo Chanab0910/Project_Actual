@@ -1,34 +1,43 @@
 import read_from_db
 from random import randint, shuffle, sample
+from sqlalchemy import create_engine
+from sqlalchemy.orm import Session
 
-group1 = []
-group2 = []
-group3 = []
-group4 = []
-group5 = []
-group6 = []
-group7 = []
-group8 = []
 
-groups = []
-# create list of objects
-# don't have lots of variables with 1 parameter changed
+class Group_generator:
+    def __init__(self):
+        self.team = ''
+        self.groups = [[] for i in range(8)]
+        self.countries_in_tiers = []
+        self.countries_in_tiers.append(sample(read_from_db.tier1_countries, len(read_from_db.tier1_countries)))
+        self.countries_in_tiers.append(sample(read_from_db.tier2_countries, len(read_from_db.tier2_countries)))
+        self.countries_in_tiers.append(sample(read_from_db.tier3_countries, len(read_from_db.tier3_countries)))
+        self.countries_in_tiers.append(sample(read_from_db.tier4_countries, len(read_from_db.tier4_countries)))
 
-countries_in_tiers = []
+    def group_draw(self):
+        for i,group in enumerate(self.groups):
+            self.team = self.countries_in_tiers[i][randint(0, len(self.countries_in_tiers[i]))]
+            group.append(self.team)
+            self.countries_in_tiers[i].remove(self.team)
+        return group
 
-countries_in_tiers.append(sample(read_from_db.tier1_countries, len(read_from_db.tier1_countries)))
-countries_in_tiers.append(sample(read_from_db.tier2_countries, len(read_from_db.tier2_countries)))
-countries_in_tiers.append(sample(read_from_db.tier3_countries, len(read_from_db.tier3_countries)))
-countries_in_tiers.append(sample(read_from_db.tier4_countries, len(read_from_db.tier4_countries)))
+class Simulate_groups:
+    def __init__(self):
+        self.Home_team_score = None
+        self.base = 0.0128125
+        self.groups = Group_generator.group_draw()
+        self.engine = self.create_engine('sqlite:///World_cup.sqlite3', echo=True)
 
-#for group, country in zip([group8, group7, group6, group5, group4, group3, group2, group1], tier1):
-#    group.append(country)
+        self.sess = self.Session(self.engine)
 
-#for group, country in zip([group8, group7, group6, group5, group4, group3, group2, group1], tier2):
- #   group.append(country)
+    def sim_match(self):
+        for group in self.groups:
+            if self.Calculate_goals(self.sess.query(self.Country.Attack).filter_by(self.Country.Country_name = group[0]))
+    def Calculate_goals(self):
+                ...
 
-#for group, country in zip([group8, group7, group6, group5, group4, group3, group2, group1], tier3):
- #   group.append(country)
 
-#for group, country in zip([group8, group7, group6, group5, group4, group3, group2, group1], tier4):
- #   group.append(country)
+
+
+
+

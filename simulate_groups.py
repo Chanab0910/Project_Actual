@@ -19,6 +19,10 @@ class simulate_group:
         self.group6 = create_groups.group6
         self.group7 = create_groups.group7
         self.group8 = create_groups.group8
+        self.team1 = ''
+        self.team2 = ''
+        self.team3 = ''
+        self.team4 = ''
 
         self.engine = create_engine('sqlite:///World_cup.sqlite3', echo=True)
         self.sess = Session(self.engine)
@@ -40,6 +44,17 @@ class simulate_group:
     def match(self, group, game):
         with Session(self.engine) as self.sess:
             self.Game = Match(Home_team= )
+
+    def order_of_play(self):
+        self.team1 = self.current_group[0]
+        self.team2 = self.current_group[1]
+        self.team3 = self.current_group[2]
+        self.team4 = self.current_group[3]
+
+        self.match(self.current_group, self.team1)
+
+    def match(self, group, team):
+        ...
 
 
 

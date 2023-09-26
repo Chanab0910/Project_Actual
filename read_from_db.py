@@ -17,3 +17,4 @@ tier2_countries = sess.query(Country).filter_by(Tier = 2).all()
 tier3_countries = sess.query(Country).filter_by(Tier = 3).all()
 tier4_countries = sess.query(Country).filter_by(Tier = 4).all()
 
+x = sess.query(Country).filter_by(Country_name == tier4_countries[0]).all()

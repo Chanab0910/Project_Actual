@@ -1,5 +1,6 @@
 from numpy import random
 
+
 base = 0.0128125
 Germany_attack = 80
 Germany_defense = 80
